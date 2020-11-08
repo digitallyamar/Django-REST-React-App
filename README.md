@@ -36,3 +36,10 @@ Since this is a demo project, our objective here is simple. We will create a sim
 			But you will find the window empty as you have not yet added any content to your DB.
 			So go ahead and add some data first:
 			http://127.0.0.1:8000/api/todo
+
+# Using MongoDB with Django
+In order to use MongoDB with Django, we will make use of a Python library called Djongo. Djongo will act as a translator layer between the SQL queries to the MongoDB queries and helps us to continue using the default Django ORM.
+
+To keep our Django REST React App code available for both SQLite DB and MongoDB, we have created a separate branch to work with MongoDB. This new branch is simply called Djongo. 
+
+So switching between main branch and the Djongo branch of this repo will switch the type of DB used.

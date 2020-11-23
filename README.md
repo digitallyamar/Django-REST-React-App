@@ -43,3 +43,15 @@ In order to use MongoDB with Django, we will make use of a Python library called
 To keep our Django REST React App code available for both SQLite DB and MongoDB, we have created a separate branch to work with MongoDB. This new branch is simply called Djongo. 
 
 So switching between main branch and the Djongo branch of this repo will switch the type of DB used.
+
+# What changes were done to get Djongo working?
+	- Install Djongo using command:
+		pip install djongo
+		
+	- Used Djongo's model in models.py
+	
+	- Edit "DATABASES" to use Djongo in settings.py.
+	
+	- Finally create migration files and apply migrations using commands:
+		python3 manage.py makemigrations
+		python3 manage.py migrate
